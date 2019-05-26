@@ -1,0 +1,12 @@
+<section class="panel bg-white text-dark">
+  <h2 class="h5">Training</h2>
+  <div class="row d-flex align-items-stretch">
+    <div class="col-xs-12 col-md-6">
+      <app-student-list [students]="enrolments.students" (studentSelected)="studentSelected = $event"></app-student-list>
+    </div>
+    <div class="col-xs-12 col-md-6 mt-3" *ngIf="studentSelected">
+      <app-student-details [student]="studentSelected"></app-student-details>
+    </div>
+  </div>
+
+</section>

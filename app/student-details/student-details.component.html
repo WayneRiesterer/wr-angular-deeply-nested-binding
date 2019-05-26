@@ -1,0 +1,22 @@
+<section class="bg-light p-2 border align-self-stretch">
+	<h2 class="h6">Student Details</h2>
+  <div class="row" *ngIf="student; else defaultContent">
+    <form class="col-12" [formGroup]="form">
+      <div class="form-group">
+        <label>Given name:</label>
+        <input type="text" class="form-control" formControlName="givenName">
+      </div>
+      <div class="form-group">
+        <label>Family name:</label>
+        <input type="text" class="form-control" formControlName="familyName">
+      </div>
+      <div class="form-group">
+        <label>Date of Birth:</label>
+        <ngb-datepicker formControlName="dateOfBirth" class="form-control"></ngb-datepicker>
+      </div>
+    </form>
+  </div>
+  <ng-template #defaultContent>
+    <p class="text-info">No student selected. Please select a student to see and/or edit their details.</p>
+  </ng-template>
+</section>

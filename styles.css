@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+}
+
+.panel {
+  padding: 1em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.list-group-item {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.list-group-item:hover {
+  background-color: #ffc107;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

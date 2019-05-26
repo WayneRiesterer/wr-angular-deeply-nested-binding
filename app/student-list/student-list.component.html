@@ -1,0 +1,8 @@
+<section class="bg-light p-2 border border">
+	<h2 class="h6">Students</h2>
+	<ul class="list-group">
+		<li class="list-group-item" *ngFor="let student of students" (click)="selectStudent(student)">
+			{{ student.givenName }} {{ student.familyName }} 
+		</li>
+	</ul>
+</section>
